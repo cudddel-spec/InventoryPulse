@@ -1,0 +1,93 @@
+[SIZE="4"][B]InventoryPulse[/B][/SIZE]
+
+[I]Deutsche Beschreibung weiter unten.[/I]
+
+InventoryPulse shows short messages in the middle of your screen that fade in and then fly away in an arc. It has two parts:
+
+[B][COLOR="White"]BagCount[/COLOR][/B]
+Whenever the number of items in your backpack changes, you see how many slots are used (or free), e.g. [B]161/215[/B].
+[LIST]
+[*]The color changes when only 15 or 5 slots are left, and you get "Inventory full!" when nothing is left.
+[*]Show it only from a certain fill level (e.g. 80 %).
+[*]Show it only every few items (e.g. at 150, 160, 170 ...).
+[/LIST]
+
+[B][COLOR="Cyan"]StackCount[/COLOR][/B] (requires ESO Plus)
+Whenever a material in your craft bag reaches 200, 400, 600 ... you see its icon and name and how many full 200 stacks you have, e.g. [B]Rubedite Ingot: 7×200[/B]. Handy if you sell full stacks in a guild store.
+
+[B]Customizable[/B]
+[LIST]
+[*]Turn BagCount and StackCount on or off separately
+[*]Font, size, outline/shadow, opacity and colors
+[*]How long the message stays in the middle, and how wide, high, fast and far it flies
+[*]Let the message shrink while flying away – looks like it flies into the distance
+[*]BagCount: let the font grow with the fill level, so you can see how full your bag is at a glance
+[*]StackCount: play a sound (ping, bell, fanfare ...) when a new 200 stack is complete
+[*]Show only in the normal game view (not in menus) – on by default
+[*]Stay quiet while a bank or guild bank is open – on by default
+[/LIST]
+
+[B]Settings[/B]
+Settings > Add-ons > InventoryPulse (needs LibAddonMenu-2.0), or type [B]/ipulse help[/B] in chat to see all commands and their current values. Everything can also be set via chat, so LibAddonMenu is optional.
+
+[B]Optional libraries[/B]
+[LIST]
+[*][URL="https://www.esoui.com/downloads/info7-LibAddonMenu.html"]LibAddonMenu-2.0[/URL] – settings menu
+[*][URL="https://www.esoui.com/downloads/info56-LibMediaProvider.html"]LibMediaProvider[/URL] – more fonts
+[/LIST]
+
+[B]Languages[/B]
+English, German. Translations are welcome – just send a copy of lang/en.lua with your translations.
+
+[B]Development notes[/B]
+This addon was developed with the assistance of AI tools. All generated content was reviewed and adapted before publication.
+
+[B]License[/B]
+MIT
+
+[COLOR="Gray"]______________________________________________________________________[/COLOR]
+
+[SIZE="4"][B]InventoryPulse (Deutsch)[/B][/SIZE]
+
+InventoryPulse zeigt kurze Meldungen in der Bildschirmmitte, die langsam erscheinen und dann im Bogen davonfliegen. Es besteht aus zwei Teilen:
+
+[B][COLOR="White"]BagCount[/COLOR][/B]
+Sobald sich die Anzahl der Gegenstände im Rucksack ändert, siehst du, wie viele Plätze belegt (oder frei) sind, z. B. [B]161/215[/B].
+[LIST]
+[*]Die Farbe ändert sich, wenn nur noch 15 oder 5 Plätze frei sind, und bei vollem Rucksack erscheint „Inventar voll!“.
+[*]Meldung erst ab einem bestimmten Füllgrad (z. B. 80 %).
+[*]Meldung nur alle paar Gegenstände (z. B. bei 150, 160, 170 …).
+[/LIST]
+
+[B][COLOR="Cyan"]StackCount[/COLOR][/B] (benötigt ESO Plus)
+Sobald eine Ressource im Handwerksbeutel 200, 400, 600 … erreicht, siehst du Icon und Name und wie viele volle 200er-Stapel du hast, z. B. [B]Rubedit-Barren: 7×200[/B]. Praktisch, wenn du im Gildenladen volle Stapel verkaufst.
+
+[B]Einstellbar[/B]
+[LIST]
+[*]BagCount und StackCount getrennt ein- und ausschalten
+[*]Schriftart, Größe, Umriss/Schatten, Deckkraft und Farben
+[*]Wie lange die Meldung in der Mitte steht und wie weit, hoch, schnell und lang sie fliegt
+[*]Meldung wird beim Wegfliegen kleiner – als würde sie in die Ferne fliegen
+[*]BagCount: Schrift wächst mit dem Füllgrad, so ist auf einen Blick erkennbar, wie voll der Rucksack ist
+[*]StackCount: Ton (Ping, Glocke, Fanfare …), sobald ein neuer 200er-Stapel voll ist
+[*]Nur in der normalen Spielansicht anzeigen (nicht in Menüs) – standardmäßig an
+[*]Stumm, solange eine Bank oder Gildenbank geöffnet ist – standardmäßig an
+[/LIST]
+
+[B]Einstellungen[/B]
+Einstellungen > Erweiterungen > InventoryPulse (benötigt LibAddonMenu-2.0) oder im Chat [B]/ipulse help[/B] – zeigt alle Befehle und die aktuellen Werte. Alles lässt sich auch per Chat einstellen, LibAddonMenu ist also optional.
+
+[B]Optionale Bibliotheken[/B]
+[LIST]
+[*][URL="https://www.esoui.com/downloads/info7-LibAddonMenu.html"]LibAddonMenu-2.0[/URL] – Einstellungsmenü
+[*][URL="https://www.esoui.com/downloads/info56-LibMediaProvider.html"]LibMediaProvider[/URL] – weitere Schriftarten
+[/LIST]
+
+[B]Sprachen[/B]
+Englisch, Deutsch. Übersetzungen sind willkommen – einfach eine Kopie von lang/en.lua mit den übersetzten Texten schicken.
+
+[B]Hinweis zur Entwicklung[/B]
+Dieses Addon wurde mit Unterstützung von KI-Werkzeugen entwickelt. Alle generierten Inhalte wurden vor der Veröffentlichung geprüft und angepasst.
+
+[B]Lizenz[/B]
+MIT

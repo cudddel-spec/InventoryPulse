@@ -1,0 +1,7 @@
+1.0.0
+- First release / Erste Veröffentlichung
+- BagCount: used/free backpack slots as flying text, with fill level and step filter
+- StackCount: message when a craft bag material reaches a multiple of 200 (ESO Plus)
+- Optional: font size grows with fill level, shrink during flight, sound for StackCount
+- Settings menu (LibAddonMenu-2.0, optional) and full chat control (/ipulse help)
+- English and German

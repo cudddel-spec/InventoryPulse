@@ -17,7 +17,7 @@ An addon for The Elder Scrolls Online that shows short messages in the middle of
 
 ## Installation
 
-Download from ESOUI or Minion, or take the ZIP from [Releases](https://github.com/cudddel-spec/InventoryPulse/releases) and extract it into
+Install via [Minion](https://minion.mmoui.com/) (search for "InventoryPulse") or download it from [ESOUI](https://www.esoui.com/downloads/info5012-InventoryPulse.html). You can also take the ZIP from [Releases](https://github.com/cudddel-spec/InventoryPulse/releases) and extract it into
 `Documents\Elder Scrolls Online\live\AddOns\`.
 
 Optional libraries:

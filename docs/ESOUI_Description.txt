@@ -39,6 +39,9 @@ Settings > Add-ons > InventoryPulse (needs LibAddonMenu-2.0), or type [B]/ipulse
 [B]Languages[/B]
 English, German. Translations are welcome – just send a copy of lang/en.lua with your translations.
 
+[B]Feedback & source code[/B]
+Bug reports and ideas are welcome in the comments here or on [URL="https://github.com/cudddel-spec/InventoryPulse"]GitHub[/URL] (issues and pull requests).
+
 [B]Development notes[/B]
 This addon was developed with the assistance of AI tools. All generated content was reviewed and adapted before publication.
 
@@ -85,6 +88,9 @@ Einstellungen > Erweiterungen > InventoryPulse (benötigt LibAddonMenu-2.0) oder
 
 [B]Sprachen[/B]
 Englisch, Deutsch. Übersetzungen sind willkommen – einfach eine Kopie von lang/en.lua mit den übersetzten Texten schicken.
+
+[B]Feedback & Quellcode[/B]
+Fehlermeldungen und Ideen gerne hier in den Kommentaren oder auf [URL="https://github.com/cudddel-spec/InventoryPulse"]GitHub[/URL] (Issues und Pull Requests).
 
 [B]Hinweis zur Entwicklung[/B]
 Dieses Addon wurde mit Unterstützung von KI-Werkzeugen entwickelt. Alle generierten Inhalte wurden vor der Veröffentlichung geprüft und angepasst.

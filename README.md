@@ -11,7 +11,7 @@ An addon for The Elder Scrolls Online that shows short messages in the middle of
 - Optional: show only from a certain fill level, or only every *n* items
 - Optional: the font grows with the fill level
 
-**StackCount**: Whenever a material in the craft bag (ESO Plus) reaches 200, 400, 600 …, you see its icon, its name and the number of full 200 stacks, e.g. `Rubedite Ingot: 7×200`, together with an optional sound. Handy if you sell full stacks in a guild store. Without ESO Plus, StackCount watches the stacks in your backpack instead (potions, soul gems, lockpicks …).
+**StackCount**: Whenever a material in the craft bag (ESO Plus) reaches 200, 400, 600 …, you see its icon, its name and the number of full 200 stacks, e.g. `Rubedite Ingot: 7×200`, together with an optional sound. Handy if you sell full stacks in a guild store. StackCount also watches full stacks in the backpack, e.g. potions, soul gems or lockpicks, which never go into the craft bag. Without ESO Plus, only the backpack is watched.
 
 **Customizable**: font, size, outline, opacity, colors, flight path (width, height, speed, distance), shrinking during flight, HUD-only display and muting at the bank.
 

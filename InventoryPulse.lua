@@ -23,6 +23,7 @@ local defaults = {
     -- StackCount
     stackDisplay = "both",             -- "both" (icon + name), "icon", "name"
     stackSound   = "NEW_NOTIFICATION", -- key from SOUNDS or "none"
+    stackBackpack = true,              -- also watch backpack stacks (potions, soul gems ...); the craft bag is watched with ESO Plus
 
     -- Shared
     font         = "bold",             -- key from FONTS or a LibMediaProvider font name
@@ -149,7 +150,7 @@ local function BagCountEnabled()
     return IP.sv.enabled == "all" or IP.sv.enabled == "bag"
 end
 
--- With ESO Plus StackCount watches the craft bag, otherwise full stacks in the backpack
+-- With ESO Plus StackCount also watches the craft bag
 local function UsesCraftBag()
     return HasCraftBagAccess()
 end
@@ -421,9 +422,9 @@ local function CountFullStacks(itemId)
     return fullStacks
 end
 
--- Without ESO Plus: a message when a backpack stack reaches 200
+-- A message when a backpack stack reaches 200 (items that never go into the craft bag, or no ESO Plus)
 local function OnBackpackStackUpdate(_, _, slotIndex, _, _, _, stackCountChange)
-    if UsesCraftBag() or not StackCountEnabled() or IsMuted() or not stackCountChange or stackCountChange <= 0 then return end
+    if not IP.sv.stackBackpack or not StackCountEnabled() or IsMuted() or not stackCountChange or stackCountChange <= 0 then return end
     local count, maxStack = GetSlotStackSize(BAG_BACKPACK, slotIndex)
     if maxStack >= STACK_SIZE and count >= STACK_SIZE and count - stackCountChange < STACK_SIZE then
         IP.ShowStackCount(BAG_BACKPACK, slotIndex, CountFullStacks(GetItemId(BAG_BACKPACK, slotIndex)))
@@ -431,18 +432,14 @@ local function OnBackpackStackUpdate(_, _, slotIndex, _, _, _, stackCountChange)
 end
 
 function IP.TestStackCount()
-    if UsesCraftBag() then
-        local slotId = ZO_GetNextBagSlotIndex(BAG_VIRTUAL)
-        if not slotId then
-            Print(L.CRAFTBAG_EMPTY)
-            return
-        end
-        local count = GetSlotStackSize(BAG_VIRTUAL, slotId)
-        IP.ShowStackCount(BAG_VIRTUAL, slotId, zo_max(1, zo_floor(count / STACK_SIZE)))
+    -- craft bag first, otherwise the first backpack item that can be stacked to 200
+    local craftSlot = UsesCraftBag() and ZO_GetNextBagSlotIndex(BAG_VIRTUAL)
+    if craftSlot then
+        local count = GetSlotStackSize(BAG_VIRTUAL, craftSlot)
+        IP.ShowStackCount(BAG_VIRTUAL, craftSlot, zo_max(1, zo_floor(count / STACK_SIZE)))
         return
     end
 
-    -- first backpack item that can be stacked to 200
     local slotIndex = ZO_GetNextBagSlotIndex(BAG_BACKPACK)
     while slotIndex do
         local _, maxStack = GetSlotStackSize(BAG_BACKPACK, slotIndex)
@@ -594,6 +591,13 @@ local function CreateSettingsMenu()
         {
             type = "description",
             text = L.STACK_DESC .. "\n" .. (UsesCraftBag() and L.STACK_MODE_CRAFTBAG or L.STACK_MODE_BACKPACK),
+        },
+        {
+            type = "checkbox", name = L.STACK_BACKPACK, tooltip = L.STACK_BACKPACK_TT,
+            getFunc = function() return IP.sv.stackBackpack end,
+            setFunc = function(v) IP.sv.stackBackpack = v end,
+            disabled = stackOff,
+            default = defaults.stackBackpack,
         },
         {
             type = "dropdown", name = L.STACK_DISPLAY,
@@ -754,6 +758,7 @@ local function ShowHelp()
         { "sizebyfill <on|off>", OnOff(sv.sizeByFill), L.HELP_SIZEBYFILL },
         { "minsize <8-150>", sv.minFontSize, L.HELP_MINSIZE },
         { "stackdisplay <both|icon|name>", sv.stackDisplay, L.HELP_STACKDISPLAY },
+        { "stackbag <on|off>", OnOff(sv.stackBackpack), L.HELP_STACKBACKPACK },
         { "sound <none|" .. table.concat(soundKeysForHelp, "|") .. ">", sv.stackSound, L.HELP_SOUND },
         { "font <name>", sv.font, L.HELP_FONT },
         { "effect <none|shadow|outline|thick-outline|soft-shadow-thin|soft-shadow-thick>", sv.effect, L.HELP_EFFECT },
@@ -855,6 +860,8 @@ local function SlashCommand(args)
         end
     elseif cmd == "stackdisplay" and (arg == "both" or arg == "icon" or arg == "name") then
         sv.stackDisplay = arg
+    elseif cmd == "stackbag" and (arg == "on" or arg == "off") then
+        sv.stackBackpack = arg == "on"
     elseif cmd == "font" and arg ~= "" then
         local _, keys = GetFontChoices()
         ok = false

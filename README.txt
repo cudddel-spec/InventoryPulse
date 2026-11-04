@@ -13,10 +13,12 @@ BagCount
   You can choose to see it only from a certain fill level (e.g. 80 %) or only
   every few items (e.g. 150, 160, 170 ...).
 
-StackCount (craft bag with ESO Plus, otherwise backpack)
+StackCount (backpack, plus craft bag with ESO Plus)
   Whenever a material in your craft bag reaches 200, 400, 600 ... you see
   its icon and name and how many full 200 stacks you have, e.g.
   "Rubedite Ingot: 7×200". Handy if you sell full stacks in a guild store.
+  Full stacks in the backpack are reported too (potions, soul gems,
+  lockpicks ...), as those never go into the craft bag.
 
 You can change almost everything: font, size, outline, opacity, colors,
 how long the message stays in the middle and how it flies away.
@@ -47,11 +49,13 @@ BagCount
   bestimmten Füllgrad (z. B. 80 %) oder nur alle paar Gegenstände
   (z. B. bei 150, 160, 170 ...).
 
-StackCount (Handwerksbeutel mit ESO Plus, sonst Rucksack)
+StackCount (Rucksack, mit ESO Plus zusätzlich Handwerksbeutel)
   Sobald eine Ressource im Handwerksbeutel 200, 400, 600 ... erreicht,
   siehst du Icon und Name und wie viele volle 200er-Stapel du hast, z. B.
   "Rubedit-Barren: 7×200". Praktisch, wenn du im Gildenladen volle Stapel
   verkaufst.
+  Volle Stapel im Rucksack werden ebenfalls gemeldet (Tränke, Seelensteine,
+  Dietriche ...), denn die wandern nie in den Handwerksbeutel.
 
 Fast alles ist einstellbar: Schriftart, Größe, Umriss, Deckkraft, Farben,
 wie lange die Meldung in der Mitte steht und wie sie davonfliegt.

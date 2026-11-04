@@ -14,7 +14,7 @@ Whenever the number of items in your backpack changes, you see how many slots ar
 
 [B][COLOR="Cyan"]StackCount[/COLOR][/B]
 Whenever a material in your craft bag reaches 200, 400, 600 ... you see its icon and name and how many full 200 stacks you have, e.g. [B]Rubedite Ingot: 7×200[/B]. Handy if you sell full stacks in a guild store.
-[I]Without ESO Plus, StackCount watches the stacks in your backpack instead (potions, soul gems, lockpicks, materials ...).[/I]
+[I]StackCount also watches your backpack: potions, poisons, food, soul gems, lockpicks and repair kits never go into the craft bag – and without ESO Plus everything stays in the backpack anyway.[/I]
 
 [B]Customizable[/B]
 [LIST]
@@ -65,7 +65,7 @@ Sobald sich die Anzahl der Gegenstände im Rucksack ändert, siehst du, wie viel
 
 [B][COLOR="Cyan"]StackCount[/COLOR][/B]
 Sobald eine Ressource im Handwerksbeutel 200, 400, 600 … erreicht, siehst du Icon und Name und wie viele volle 200er-Stapel du hast, z. B. [B]Rubedit-Barren: 7×200[/B]. Praktisch, wenn du im Gildenladen volle Stapel verkaufst.
-[I]Ohne ESO Plus überwacht StackCount stattdessen die Stapel im Rucksack (Tränke, Seelensteine, Dietriche, Materialien …).[/I]
+[I]StackCount überwacht auch den Rucksack: Tränke, Gifte, Speisen, Seelensteine, Dietriche und Reparaturkits wandern nie in den Handwerksbeutel – und ohne ESO Plus bleibt ohnehin alles im Rucksack.[/I]
 
 [B]Einstellbar[/B]
 [LIST]

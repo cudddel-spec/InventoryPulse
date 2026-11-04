@@ -1,5 +1,6 @@
 1.0.1
-- StackCount without ESO Plus: reports full 200 stacks in the backpack
+- StackCount also reports full 200 stacks in the backpack (potions, soul gems, lockpicks ...),
+  with ESO Plus in addition to the craft bag; can be switched off
 - BagCount: optional percent display ("75% full"), with or without word, colors at 80/90/95 %
 
 1.0.0

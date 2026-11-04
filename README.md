@@ -6,12 +6,12 @@ An addon for The Elder Scrolls Online that shows short messages in the middle of
 
 ## Features
 
-**BagCount**: Whenever the number of items in your backpack changes, you see how many slots are used (or free), e.g. `161/215`.
+**BagCount**: Whenever the number of items in your backpack changes, you see how many slots are used (or free), e.g. `161/215`, or as a percentage, e.g. `75% full`.
 - The color changes when only 15 or 5 slots are left, and you see "Inventory full!" when nothing is left
 - Optional: show only from a certain fill level, or only every *n* items
 - Optional: the font grows with the fill level
 
-**StackCount** (requires ESO Plus): Whenever a material in the craft bag reaches 200, 400, 600 …, you see its icon, its name and the number of full 200 stacks, e.g. `Rubedite Ingot: 7×200`, together with an optional sound. Handy if you sell full stacks in a guild store.
+**StackCount**: Whenever a material in the craft bag (ESO Plus) reaches 200, 400, 600 …, you see its icon, its name and the number of full 200 stacks, e.g. `Rubedite Ingot: 7×200`, together with an optional sound. Handy if you sell full stacks in a guild store. Without ESO Plus, StackCount watches the stacks in your backpack instead (potions, soul gems, lockpicks …).
 
 **Customizable**: font, size, outline, opacity, colors, flight path (width, height, speed, distance), shrinking during flight, HUD-only display and muting at the bank.
 

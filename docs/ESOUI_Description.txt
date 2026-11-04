@@ -5,15 +5,16 @@
 InventoryPulse shows short messages in the middle of your screen that fade in and then fly away in an arc. It has two parts:
 
 [B][COLOR="White"]BagCount[/COLOR][/B]
-Whenever the number of items in your backpack changes, you see how many slots are used (or free), e.g. [B]161/215[/B].
+Whenever the number of items in your backpack changes, you see how many slots are used (or free), e.g. [B]161/215[/B] – or as a percentage, e.g. [B]75% full[/B].
 [LIST]
 [*]The color changes when only 15 or 5 slots are left, and you get "Inventory full!" when nothing is left.
 [*]Show it only from a certain fill level (e.g. 80 %).
 [*]Show it only every few items (e.g. at 150, 160, 170 ...).
 [/LIST]
 
-[B][COLOR="Cyan"]StackCount[/COLOR][/B] (requires ESO Plus)
+[B][COLOR="Cyan"]StackCount[/COLOR][/B]
 Whenever a material in your craft bag reaches 200, 400, 600 ... you see its icon and name and how many full 200 stacks you have, e.g. [B]Rubedite Ingot: 7×200[/B]. Handy if you sell full stacks in a guild store.
+[I]Without ESO Plus, StackCount watches the stacks in your backpack instead (potions, soul gems, lockpicks, materials ...).[/I]
 
 [B]Customizable[/B]
 [LIST]
@@ -55,15 +56,16 @@ MIT
 InventoryPulse zeigt kurze Meldungen in der Bildschirmmitte, die langsam erscheinen und dann im Bogen davonfliegen. Es besteht aus zwei Teilen:
 
 [B][COLOR="White"]BagCount[/COLOR][/B]
-Sobald sich die Anzahl der Gegenstände im Rucksack ändert, siehst du, wie viele Plätze belegt (oder frei) sind, z. B. [B]161/215[/B].
+Sobald sich die Anzahl der Gegenstände im Rucksack ändert, siehst du, wie viele Plätze belegt (oder frei) sind, z. B. [B]161/215[/B] – oder in Prozent, z. B. [B]75% voll[/B].
 [LIST]
 [*]Die Farbe ändert sich, wenn nur noch 15 oder 5 Plätze frei sind, und bei vollem Rucksack erscheint „Inventar voll!“.
 [*]Meldung erst ab einem bestimmten Füllgrad (z. B. 80 %).
 [*]Meldung nur alle paar Gegenstände (z. B. bei 150, 160, 170 …).
 [/LIST]
 
-[B][COLOR="Cyan"]StackCount[/COLOR][/B] (benötigt ESO Plus)
+[B][COLOR="Cyan"]StackCount[/COLOR][/B]
 Sobald eine Ressource im Handwerksbeutel 200, 400, 600 … erreicht, siehst du Icon und Name und wie viele volle 200er-Stapel du hast, z. B. [B]Rubedit-Barren: 7×200[/B]. Praktisch, wenn du im Gildenladen volle Stapel verkaufst.
+[I]Ohne ESO Plus überwacht StackCount stattdessen die Stapel im Rucksack (Tränke, Seelensteine, Dietriche, Materialien …).[/I]
 
 [B]Einstellbar[/B]
 [LIST]

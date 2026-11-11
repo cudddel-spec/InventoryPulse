@@ -1,3 +1,11 @@
+1.0.2
+- Events are only registered while a feature needs them (BagCount, StackCount, bank mute, HUD only)
+  and are unregistered as soon as it is switched off
+- Inventory events filtered by bag and update reason (no work on durability, dye or charge changes)
+- Only one global variable (InventoryPulse)
+- Settings are saved per server (EU, NA, PTS); existing settings are copied to each server once
+- AI disclosure at the top of the description
+
 1.0.1
 - StackCount also reports full 200 stacks in the backpack (potions, soul gems, lockpicks ...),
   with ESO Plus in addition to the craft bag; can be switched off

@@ -1,5 +1,7 @@
 [SIZE="4"][B]InventoryPulse[/B][/SIZE]
 
+[COLOR="Orange"][B]AI disclosure:[/B] The code of this addon was written with the help of an AI assistant (Claude by Anthropic). The author reviewed it, tested it in-game and is responsible for it.[/COLOR]
+
 [I]Deutsche Beschreibung weiter unten.[/I]
 
 InventoryPulse shows short messages in the middle of your screen that fade in and then fly away in an arc. It has two parts:
@@ -43,15 +45,14 @@ English, German. Translations are welcome – just send a copy of lang/en.lua wi
 [B]Feedback & source code[/B]
 Bug reports and ideas are welcome in the comments here or on [URL="https://github.com/cudddel-spec/InventoryPulse"]GitHub[/URL] (issues and pull requests).
 
-[B]Development notes[/B]
-This addon was developed with the assistance of AI tools. All generated content was reviewed and adapted before publication.
-
 [B]License[/B]
 MIT
 
 [COLOR="Gray"]______________________________________________________________________[/COLOR]
 
 [SIZE="4"][B]InventoryPulse (Deutsch)[/B][/SIZE]
+
+[COLOR="Orange"][B]Hinweis zu KI:[/B] Der Code dieses Addons wurde mit Hilfe eines KI-Assistenten (Claude von Anthropic) geschrieben. Der Autor hat ihn geprüft, im Spiel getestet und ist dafür verantwortlich.[/COLOR]
 
 InventoryPulse zeigt kurze Meldungen in der Bildschirmmitte, die langsam erscheinen und dann im Bogen davonfliegen. Es besteht aus zwei Teilen:
 
@@ -93,9 +94,6 @@ Englisch, Deutsch. Übersetzungen sind willkommen – einfach eine Kopie von lan
 
 [B]Feedback & Quellcode[/B]
 Fehlermeldungen und Ideen gerne hier in den Kommentaren oder auf [URL="https://github.com/cudddel-spec/InventoryPulse"]GitHub[/URL] (Issues und Pull Requests).
-
-[B]Hinweis zur Entwicklung[/B]
-Dieses Addon wurde mit Unterstützung von KI-Werkzeugen entwickelt. Alle generierten Inhalte wurden vor der Veröffentlichung geprüft und angepasst.
 
 [B]Lizenz[/B]
 MIT

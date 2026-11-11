@@ -39,8 +39,8 @@ English and German. Translations are welcome: copy `lang/en.lua` to `lang/<langu
 - `python tools/build_release.py` builds `dist/InventoryPulse-<version>.zip`, which contains only the files players need.
 - `docs/` holds the changelog, the ESOUI description and the screenshots.
 
-This addon was developed with the assistance of AI tools.
-All generated content was reviewed and adapted before publication.
+**AI disclosure:** The code of this addon was written with the help of an AI assistant (Claude by Anthropic).
+The author reviewed it, tested it in-game and is responsible for it.
 
 ## License
 

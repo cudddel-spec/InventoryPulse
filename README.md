@@ -35,7 +35,9 @@ English and German. Translations are welcome: copy `lang/en.lua` to `lang/<langu
 
 ## Development
 
-- The addon files live directly in the repository root, so a clone in the `AddOns` folder can be tested in-game right away.
+- The repository does **not** live in the `AddOns` folder: Minion replaces the whole addon folder on every update
+  (including `.git`, `docs`, `tools`). `python tools/deploy.py [AddOns folder]` copies the game files to
+  `AddOns/InventoryPulse` for testing (default: `%ESO_ADDONS%` or `D:\Dokumente\Elder Scrolls Online\live\AddOns`), then `/reloadui`.
 - `python tools/build_release.py` builds `dist/InventoryPulse-<version>.zip`, which contains only the files players need.
 - `docs/` holds the changelog, the ESOUI description and the screenshots.
 
